@@ -452,3 +452,18 @@ form textarea {
   background-color: var(--main-color);
 }
 
+
+@media (max-width:1400px) {
+  header {
+    padding: 12px 2.5%;
+    transition: 0.1s;
+  }
+
+  section {
+    padding: 110px 3% 60px;
+  }
+
+  .end {
+    padding: 15px 3%;
+  }
+}
