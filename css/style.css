@@ -501,3 +501,42 @@ form textarea {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width:400px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navlist {
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    text-align: left;
+    transition: all 0.45s ease;
+  }
+
+  .navlist a {
+    display: block;
+    margin: 17px;
+    font-size: 20px;
+    transition: all 0.45s ease;
+    color: var(--text-color);
+  }
+
+  .navlist a:hover {
+    color: var(--main-color);
+  }
+
+  .navlist a.active {
+    color: var(--text-color);
+  }
+
+  .navlist.open {
+    top: 100%;
+  }
+}
+
